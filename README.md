@@ -7,6 +7,8 @@ Personal portfolio website deployed at [https://ganesh-k13.github.io/](https://g
 - **React 18** - UI library
 - **Vite** - Build tool and dev server
 - **Tailwind CSS** - Styling framework
+- **Recharts** - Data visualization
+- **Framer Motion** - Animations
 - **GitHub Pages** - Hosting
 
 ## Features
@@ -17,6 +19,8 @@ Personal portfolio website deployed at [https://ganesh-k13.github.io/](https://g
 - 🎯 Smooth scroll navigation with active section highlighting
 - 🔗 SEO optimized with Open Graph meta tags
 - 🚀 Automated deployment via GitHub Actions
+- 📊 Interactive visualizations (skill charts, career timeline, contribution graphs)
+- ✨ Smooth animations with Framer Motion
 
 ## Local Development
 
@@ -77,10 +81,15 @@ ganesh-k13.github.io/
 │   ├── components/
 │   │   ├── Header.jsx          # Sticky navigation
 │   │   ├── Hero.jsx            # About section
+│   │   ├── CareerTimeline.jsx  # Interactive career timeline
+│   │   ├── SkillsChart.jsx     # Skill proficiency bar chart
+│   │   ├── OpenSourceChart.jsx # Contribution pie chart
 │   │   ├── Experience.jsx      # Work experience timeline
 │   │   ├── OpenSource.jsx      # Open source contributions
 │   │   ├── Skills.jsx          # Skills, education, publications
 │   │   └── Contact.jsx         # Contact info and footer
+│   ├── data/
+│   │   └── visuals.json        # Visualization data
 │   ├── App.jsx                 # Main app component
 │   ├── main.jsx                # React entry point
 │   ├── index.css               # Global styles
@@ -94,9 +103,13 @@ ganesh-k13.github.io/
 
 ## Data Source
 
-All content is extracted from the resume in `Ganesh_Kathiresan/ganeshk.tex` and structured in `src/data.js`.
+All content is extracted from the resume in `Ganesh_Kathiresan/ganeshk.tex` and structured in:
+- `src/data.js` - Profile, experience, skills
+- `src/data/visuals.json` - Visualization data (charts, timeline)
 
-To update content, edit `src/data.js` and rebuild.
+To update content, edit these files and rebuild.
+
+See [VISUALIZATIONS.md](./VISUALIZATIONS.md) for detailed visualization customization guide.
 
 ## License
 

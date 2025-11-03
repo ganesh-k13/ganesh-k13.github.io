@@ -99,7 +99,7 @@ export const education = {
 
 export const publications = {
   scholarProfile: "https://scholar.google.co.in/citations?user=qqj1AtEAAAAJ&hl=en",
-  citations: 28
+  citations: 33
 }
 
 export const awards = [
