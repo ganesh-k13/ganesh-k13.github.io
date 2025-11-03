@@ -4,7 +4,6 @@ import Experience from './components/Experience'
 import OpenSource from './components/OpenSource'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
-import SkillsChart from './components/SkillsChart'
 import CareerTimeline from './components/CareerTimeline'
 import OpenSourceChart from './components/OpenSourceChart'
 
@@ -20,8 +19,7 @@ const App = () => (
             <h3 className="text-3xl font-semibold mb-8 text-gray-100">Career Journey</h3>
             <CareerTimeline />
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            <SkillsChart />
+          <div className="max-w-2xl mx-auto">
             <OpenSourceChart />
           </div>
         </div>

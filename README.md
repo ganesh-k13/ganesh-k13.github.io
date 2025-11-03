@@ -82,7 +82,6 @@ ganesh-k13.github.io/
 │   │   ├── Header.jsx          # Sticky navigation
 │   │   ├── Hero.jsx            # About section
 │   │   ├── CareerTimeline.jsx  # Interactive career timeline
-│   │   ├── SkillsChart.jsx     # Skill proficiency bar chart
 │   │   ├── OpenSourceChart.jsx # Contribution pie chart
 │   │   ├── Experience.jsx      # Work experience timeline
 │   │   ├── OpenSource.jsx      # Open source contributions

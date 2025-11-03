@@ -6,13 +6,7 @@ The portfolio now includes interactive data visualizations powered by **Recharts
 
 ## Components
 
-### 1. SkillsChart (`src/components/SkillsChart.jsx`)
-- **Type**: Horizontal bar chart
-- **Library**: Recharts
-- **Data**: Skill proficiency levels (0-100)
-- **Features**: Color-coded bars (blue for 85+, grey for <85)
-
-### 2. CareerTimeline (`src/components/CareerTimeline.jsx`)
+### 1. CareerTimeline (`src/components/CareerTimeline.jsx`)
 - **Type**: Vertical timeline with hover interactions
 - **Library**: Framer Motion
 - **Data**: Job roles, companies, durations, impact metrics
@@ -21,7 +15,7 @@ The portfolio now includes interactive data visualizations powered by **Recharts
   - Hover to reveal impact and technologies
   - Scale effect on hover
 
-### 3. OpenSourceChart (`src/components/OpenSourceChart.jsx`)
+### 2. OpenSourceChart (`src/components/OpenSourceChart.jsx`)
 - **Type**: Pie chart
 - **Library**: Recharts
 - **Data**: Contribution counts by project
@@ -33,22 +27,12 @@ All visualization data is stored in `src/data/visuals.json`:
 
 ```json
 {
-  "skillProficiency": [...],
   "careerTimeline": [...],
   "openSourceImpact": [...]
 }
 ```
 
 ## Modifying Visualization Data
-
-### Update Skill Levels
-Edit `src/data/visuals.json`:
-```json
-{
-  "skill": "Python",
-  "level": 95
-}
-```
 
 ### Add Career Entry
 ```json
@@ -91,9 +75,6 @@ Edit `src/data/visuals.json`:
 ### Change Chart Colors
 Edit component files:
 ```jsx
-// SkillsChart.jsx
-<Cell fill={entry.level >= 85 ? '#3b82f6' : '#6b7280'} />
-
 // OpenSourceChart.jsx
 const COLORS = ['#3b82f6', '#6366f1', '#8b5cf6']
 ```
