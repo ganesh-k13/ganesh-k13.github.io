@@ -1,0 +1,46 @@
+{
+  "skillProficiency": [
+    { "skill": "Python", "level": 95 },
+    { "skill": "AWS", "level": 90 },
+    { "skill": "C/C++", "level": 85 },
+    { "skill": "Network Automation", "level": 90 },
+    { "skill": "Docker/K8s", "level": 85 },
+    { "skill": "TypeScript", "level": 75 },
+    { "skill": "DevOps", "level": 88 },
+    { "skill": "System Design", "level": 82 }
+  ],
+  "careerTimeline": [
+    {
+      "company": "Amazon WFM",
+      "role": "Senior SDE (L6)",
+      "start": "2024-04",
+      "end": null,
+      "duration": "9 months",
+      "impact": "$3M annual savings",
+      "technologies": ["Python", "AWS", "Network Automation", "CDK"]
+    },
+    {
+      "company": "AWS",
+      "role": "SDE 2 (L5)",
+      "start": "2021-12",
+      "end": "2024-03",
+      "duration": "2.3 years",
+      "impact": "1700 hours/month saved",
+      "technologies": ["Python", "Flask", "ECS", "Fargate", "CDK"]
+    },
+    {
+      "company": "Citrix",
+      "role": "Software Engineer",
+      "start": "2019-07",
+      "end": "2021-12",
+      "duration": "2.4 years",
+      "impact": "WAF Recommendation Engine",
+      "technologies": ["Python", "Kubernetes", "Security", "NetScaler"]
+    }
+  ],
+  "openSourceImpact": [
+    { "project": "NumPy", "contributions": 45, "role": "Core Dev" },
+    { "project": "OpenCV", "contributions": 12, "role": "Contributor" },
+    { "project": "CPython", "contributions": 3, "role": "Contributor" }
+  ]
+}

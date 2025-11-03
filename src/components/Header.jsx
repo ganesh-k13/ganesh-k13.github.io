@@ -5,7 +5,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['about', 'experience', 'opensource', 'skills', 'contact']
+      const sections = ['about', 'visualizations', 'experience', 'opensource', 'skills', 'contact']
       const current = sections.find(section => {
         const element = document.getElementById(section)
         if (element) {
@@ -22,6 +22,7 @@ const Header = () => {
 
   const navItems = [
     { id: 'about', label: 'About' },
+    { id: 'visualizations', label: 'Insights' },
     { id: 'experience', label: 'Experience' },
     { id: 'opensource', label: 'Open Source' },
     { id: 'skills', label: 'Skills' },
