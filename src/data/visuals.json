@@ -1,14 +1,4 @@
 {
-  "skillProficiency": [
-    { "skill": "Python", "level": 95 },
-    { "skill": "AWS", "level": 90 },
-    { "skill": "C/C++", "level": 85 },
-    { "skill": "Network Automation", "level": 90 },
-    { "skill": "Docker/K8s", "level": 85 },
-    { "skill": "TypeScript", "level": 75 },
-    { "skill": "DevOps", "level": 88 },
-    { "skill": "System Design", "level": 82 }
-  ],
   "careerTimeline": [
     {
       "company": "Amazon WFM",
@@ -39,8 +29,11 @@
     }
   ],
   "openSourceImpact": [
-    { "project": "NumPy", "contributions": 45, "role": "Core Dev" },
-    { "project": "OpenCV", "contributions": 12, "role": "Contributor" },
-    { "project": "CPython", "contributions": 3, "role": "Contributor" }
+    { "project": "NumPy", "contributions": 144, "role": "Core Dev" },
+    { "project": "gc", "contributions": 8, "role": "Contributor" },
+    { "project": "OpenCV", "contributions": 6, "role": "Contributor" },
+    { "project": "spin", "contributions": 5, "role": "Contributor" },
+    { "project": "SciPy", "contributions": 3, "role": "Contributor" },
+    { "project": "CPython", "contributions": 1, "role": "Contributor" }
   ]
 }

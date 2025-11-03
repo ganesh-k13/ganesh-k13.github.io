@@ -1,7 +1,7 @@
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from 'recharts'
 import visualData from '../data/visuals.json'
 
-const COLORS = ['#3b82f6', '#6366f1', '#8b5cf6']
+const COLORS = ['#3b82f6', '#6366f1', '#8b5cf6', '#ec4899', '#f59e0b', '#10b981']
 
 const OpenSourceChart = () => (
   <div className="bg-darker p-6 rounded-lg border border-gray-800">
