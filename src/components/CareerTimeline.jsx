@@ -29,7 +29,7 @@ const CareerTimeline = () => {
                   <h3 className="text-xl font-semibold text-gray-100">{job.company}</h3>
                   <p className="text-accent">{job.role}</p>
                 </div>
-                <span className="text-sm text-gray-500">{job.duration}</span>
+                <span className="text-sm text-gray-500">{job.start} - {job.end}</span>
               </div>
               {hoveredIndex === idx && (
                 <motion.div
@@ -37,7 +37,6 @@ const CareerTimeline = () => {
                   animate={{ opacity: 1, height: 'auto' }}
                   className="mt-4 pt-4 border-t border-gray-800"
                 >
-                  <p className="text-sm text-gray-400 mb-2">Impact: <span className="text-accent">{job.impact}</span></p>
                   <div className="flex flex-wrap gap-2">
                     {job.technologies.map((tech, i) => (
                       <span key={i} className="px-2 py-1 bg-dark text-xs text-gray-400 rounded">

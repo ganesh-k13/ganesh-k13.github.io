@@ -3,36 +3,32 @@
     {
       "company": "Amazon | Whole Foods Market",
       "role": "Senior SDE (L6)",
-      "start": "2024-04",
-      "end": null,
-      "duration": "9 months",
+      "start": "April 2024",
+      "end": "Present",
       "impact": "$3M annual savings",
       "technologies": ["Python", "AWS", "Network Automation", "CDK"]
     },
     {
       "company": "AWS",
       "role": "SDE 2 (L5)",
-      "start": "2021-12",
-      "end": "2024-03",
-      "duration": "2.3 years",
+      "start": "December 2021",
+      "end": "March 2024",
       "impact": "1700 hours/month of engineering hours saved",
       "technologies": ["Python", "Flask", "ECS", "Fargate", "CDK"]
     },
     {
       "company": "Citrix",
       "role": "Software Engineer",
-      "start": "2019-07",
-      "end": "2021-12",
-      "duration": "2.4 years",
+      "start": "July 2019",
+      "end": "December 2021",
       "impact": "WAF Recommendation Engine",
       "technologies": ["Python", "Kubernetes", "Security", "NetScaler"]
     },
     {
       "company": "Citrix",
       "role": "Software Engineering Intern",
-      "start": "2019-01",
-      "end": "2019-06",
-      "duration": "6 months",
+      "start": "January 2019",
+      "end": "June 2019",
       "impact": "Ingress Controller for NetScaler WAF in Kubernetes deployment",
       "technologies": ["Python", "Kubernetes", "Security", "NetScaler"]
     }

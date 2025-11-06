@@ -1,7 +1,7 @@
 export const profile = {
   name: "Ganesh Kathiresan",
   title: "Senior Software Engineer",
-  bio: "I am a Software Developer who loves to solve problems. Also a Core Developer and Maintainer of NumPy.",
+  bio: "",
   // email: "ganesh3597@gmail.com",
   linkedin: "ganesh-kathiresan",
   github: "ganesh-k13",
