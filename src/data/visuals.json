@@ -1,7 +1,7 @@
 {
   "careerTimeline": [
     {
-      "company": "Amazon WFM",
+      "company": "Amazon | Whole Foods Market",
       "role": "Senior SDE (L6)",
       "start": "2024-04",
       "end": null,
@@ -15,7 +15,7 @@
       "start": "2021-12",
       "end": "2024-03",
       "duration": "2.3 years",
-      "impact": "1700 hours/month saved",
+      "impact": "1700 hours/month of engineering hours saved",
       "technologies": ["Python", "Flask", "ECS", "Fargate", "CDK"]
     },
     {
@@ -26,14 +26,23 @@
       "duration": "2.4 years",
       "impact": "WAF Recommendation Engine",
       "technologies": ["Python", "Kubernetes", "Security", "NetScaler"]
+    },
+    {
+      "company": "Citrix",
+      "role": "Software Engineering Intern",
+      "start": "2019-01",
+      "end": "2019-06",
+      "duration": "6 months",
+      "impact": "Ingress Controller for NetScaler WAF in Kubernetes deployment",
+      "technologies": ["Python", "Kubernetes", "Security", "NetScaler"]
     }
   ],
   "openSourceImpact": [
-    { "project": "NumPy", "contributions": 144, "role": "Core Dev" },
-    { "project": "gc", "contributions": 8, "role": "Contributor" },
-    { "project": "OpenCV", "contributions": 6, "role": "Contributor" },
-    { "project": "spin", "contributions": 5, "role": "Contributor" },
-    { "project": "SciPy", "contributions": 3, "role": "Contributor" },
-    { "project": "CPython", "contributions": 1, "role": "Contributor" }
+    { "project": "NumPy", "contributions": 144, "role": "Core Dev", "repo": "numpy/numpy" },
+    { "project": "gc", "contributions": 8, "role": "Contributor", "repo": "mkirchner/gc" },
+    { "project": "OpenCV", "contributions": 6, "role": "Contributor", "repo": "opencv/opencv" },
+    { "project": "spin", "contributions": 5, "role": "Contributor", "repo": "scientific-python/spin" },
+    { "project": "SciPy", "contributions": 3, "role": "Contributor", "repo": "scipy/scipy" },
+    { "project": "CPython", "contributions": 1, "role": "Contributor", "repo": "python/cpython" }
   ]
 }
