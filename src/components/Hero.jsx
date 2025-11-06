@@ -7,7 +7,6 @@ const Hero = () => (
         {profile.name}
       </h1>
       <h2 className="text-2xl md:text-3xl text-gray-400 mb-6">{profile.title}</h2>
-      <p className="text-lg text-gray-300 leading-relaxed max-w-2xl">{profile.bio}</p>
       <div className="flex gap-6 mt-8 items-center">
         <a href="https://ganesh-k13.github.io/Ganesh-Kathiresan-Resume/" target="_blank" rel="noopener noreferrer"
            className="px-6 py-3 bg-accent hover:bg-blue-600 text-white font-semibold rounded-lg transition-colors">
