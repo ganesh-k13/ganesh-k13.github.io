@@ -7,8 +7,8 @@ const CareerTimeline = () => {
 
   return (
     <div className="relative">
-      <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-accent/30" />
-      <div className="space-y-8">
+      <div className="absolute left-4 sm:left-8 top-0 bottom-0 w-0.5 bg-accent/30" />
+      <div className="space-y-6 sm:space-y-8">
         {visualData.careerTimeline.map((job, idx) => (
           <motion.div
             key={idx}
@@ -18,18 +18,18 @@ const CareerTimeline = () => {
             viewport={{ once: true }}
             onHoverStart={() => setHoveredIndex(idx)}
             onHoverEnd={() => setHoveredIndex(null)}
-            className="relative pl-20"
+            className="relative pl-12 sm:pl-20"
           >
-            <div className="absolute left-6 w-5 h-5 rounded-full bg-accent border-4 border-darker" />
-            <div className={`bg-darker p-6 rounded-lg border transition-all duration-300 ${
-              hoveredIndex === idx ? 'border-accent scale-105' : 'border-gray-800'
+            <div className="absolute left-2.5 sm:left-6 w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-accent border-2 sm:border-4 border-darker" />
+            <div className={`bg-darker p-4 sm:p-6 rounded-lg border transition-all duration-300 ${
+              hoveredIndex === idx ? 'border-accent sm:scale-105' : 'border-gray-800'
             }`}>
-              <div className="flex justify-between items-start mb-2">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-2">
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-100">{job.company}</h3>
-                  <p className="text-accent">{job.role}</p>
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-100">{job.company}</h3>
+                  <p className="text-accent text-sm sm:text-base">{job.role}</p>
                 </div>
-                <span className="text-sm text-gray-500">{job.start} - {job.end}</span>
+                <span className="text-xs sm:text-sm text-gray-500 whitespace-nowrap">{job.start} - {job.end}</span>
               </div>
               {hoveredIndex === idx && (
                 <motion.div

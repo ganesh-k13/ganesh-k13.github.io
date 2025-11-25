@@ -12,11 +12,11 @@ const App = () => (
     <Header />
     <main>
       <Hero />
-      <section id="visualizations" className="min-h-screen py-20 px-6 bg-dark">
+      <section id="visualizations" className="min-h-screen py-20 px-4 sm:px-6 bg-dark">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-accent">Career Insights</h2>
-          <div className="mb-16">
-            <h3 className="text-3xl font-semibold mb-8 text-gray-100">Career Journey</h3>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 text-accent">Career Insights</h2>
+          <div className="mb-12 sm:mb-16">
+            <h3 className="text-2xl sm:text-3xl font-semibold mb-6 sm:mb-8 text-gray-100">Career Journey</h3>
             <CareerTimeline />
           </div>
           <div className="max-w-2xl mx-auto">
