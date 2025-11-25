@@ -12,9 +12,9 @@ const OpenSourceChart = () => {
   }
 
   return (
-    <div className="bg-darker p-6 rounded-lg border border-gray-800">
-      <h3 className="text-2xl font-semibold mb-6 text-gray-100">Open Source Contributions</h3>
-      <ResponsiveContainer width="100%" height={400}>
+    <div className="bg-darker p-4 sm:p-6 rounded-lg border border-gray-800">
+      <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 text-gray-100">Open Source Contributions</h3>
+      <ResponsiveContainer width="100%" height={300} className="sm:h-[400px]">
         <PieChart>
           <Pie
             data={visualData.openSourceImpact}
@@ -22,9 +22,9 @@ const OpenSourceChart = () => {
             nameKey="project"
             cx="50%"
             cy="50%"
-            outerRadius={90}
-            label={({ project, contributions }) => `${project}: ${contributions}`}
-            labelLine={{ stroke: '#6b7280', strokeWidth: 1 }}
+            outerRadius={window.innerWidth < 640 ? 60 : 90}
+            label={window.innerWidth >= 640 ? ({ project, contributions }) => `${project}: ${contributions}` : false}
+            labelLine={window.innerWidth >= 640 ? { stroke: '#6b7280', strokeWidth: 1 } : false}
           >
             {visualData.openSourceImpact.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
@@ -35,12 +35,13 @@ const OpenSourceChart = () => {
               backgroundColor: '#1e293b', 
               border: '2px solid #3b82f6', 
               borderRadius: '8px',
-              color: '#f1f5f9'
+              color: '#f1f5f9',
+              fontSize: '12px'
             }}
             itemStyle={{ color: '#f1f5f9' }}
           />
           <Legend 
-            wrapperStyle={{ color: '#9ca3af', cursor: 'pointer' }} 
+            wrapperStyle={{ color: '#9ca3af', cursor: 'pointer', fontSize: '12px' }} 
             onClick={handleLegendClick}
           />
         </PieChart>
