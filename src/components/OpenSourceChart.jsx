@@ -1,9 +1,18 @@
+import { useState, useEffect } from 'react'
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from 'recharts'
 import visualData from '../data/visuals.json'
 
 const COLORS = ['#3b82f6', '#6366f1', '#8b5cf6', '#ec4899', '#f59e0b', '#10b981']
 
 const OpenSourceChart = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 640)
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 640)
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
   const handleLegendClick = (entry) => {
     const project = visualData.openSourceImpact.find(p => p.project === entry.value)
     if (project) {
@@ -23,9 +32,9 @@ const OpenSourceChart = () => {
             nameKey="project"
             cx="50%"
             cy="50%"
-            outerRadius={window.innerWidth < 640 ? 60 : 90}
-            label={window.innerWidth >= 640 ? ({ project, contributions }) => `${project}: ${contributions}` : false}
-            labelLine={window.innerWidth >= 640 ? { stroke: '#6b7280', strokeWidth: 1 } : false}
+            outerRadius={isMobile ? 60 : 90}
+            label={!isMobile ? ({ project, contributions }) => `${project}: ${contributions}` : false}
+            labelLine={!isMobile ? { stroke: '#6b7280', strokeWidth: 1 } : false}
           >
             {visualData.openSourceImpact.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
