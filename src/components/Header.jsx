@@ -56,6 +56,7 @@ const Header = () => {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="md:hidden text-gray-400 hover:text-accent transition-colors"
           aria-label="Toggle menu"
+          aria-expanded={isMenuOpen}
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {isMenuOpen ? (
