@@ -14,8 +14,9 @@ const OpenSourceChart = () => {
   return (
     <div className="bg-darker p-4 sm:p-6 rounded-lg border border-gray-800">
       <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 text-gray-100">Open Source Contributions</h3>
-      <ResponsiveContainer width="100%" height={300} className="sm:h-[400px]">
-        <PieChart>
+      <div className="h-[300px] sm:h-[400px]">
+        <ResponsiveContainer width="100%" height="100%">
+          <PieChart>
           <Pie
             data={visualData.openSourceImpact}
             dataKey="contributions"
@@ -45,7 +46,8 @@ const OpenSourceChart = () => {
             onClick={handleLegendClick}
           />
         </PieChart>
-      </ResponsiveContainer>
+        </ResponsiveContainer>
+      </div>
       <p className="text-xs text-gray-500 text-center mt-2">Click project names to view commits on GitHub</p>
     </div>
   )
